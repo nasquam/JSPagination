@@ -1,31 +1,78 @@
 .pagination ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding-left: 15px;
-    
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 15px;
 }
 
 .items {
-    border: 1px solid red;
+  /* border: 1px solid red; */
+  min-height: 150px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pagination {
-    border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .items ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 20px;
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .pagination ul li {
-    padding: 10px;
-    border: 1px solid #333333;
-    margin: 5px;
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  margin: 5px;
+  background: rgba(226, 226, 226, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(226, 226, 226, 1)),
+    color-stop(50%, rgba(219, 219, 219, 1)),
+    color-stop(51%, rgba(209, 209, 209, 1)),
+    color-stop(100%, rgba(254, 254, 254, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(226, 226, 226, 1) 0%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(209, 209, 209, 1) 51%,
+    rgba(254, 254, 254, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
 }
 
 .pagination ul li {
-    cursor: pointer;
+  cursor: pointer;
 }
