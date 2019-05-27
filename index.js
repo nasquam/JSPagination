@@ -60,9 +60,12 @@ let items = [
     {name : "Item 39", size : "Large", price : 79.99}
 ]
 
-let numberToDisplay = 5;
+// The data displayed will be one more than the variale because 
+// array counting starts at zero 0 - 5
+let numberToDisplay = 4;
 let currentPage = 1;
 
+// This code displays the code in the div as a list
 let itemList = (start, numberToDisplay) => {
     let itemDiv = document.getElementById('items') 
     itemDiv.innerHTML = ""
@@ -79,6 +82,7 @@ let itemList = (start, numberToDisplay) => {
     document.getElementById('items').appendChild(ul);
 }
 
+// This prints the menu under the data 
 let pagination = (pageToStart = 1) => {
     currentPage = pageToStart;
     let pagination = document.getElementById('pagination')
@@ -92,6 +96,7 @@ let pagination = (pageToStart = 1) => {
     first.addEventListener('click', function(){
         itemList(0, numberToDisplay)
         jumpToFirst()
+        // pagination(1)
     })
     
     ul.appendChild(first)
@@ -130,10 +135,11 @@ let pagination = (pageToStart = 1) => {
     pagination.appendChild(ul)
 }
 
-let jumpToFirst = () => {
+let jumpToFirst = () =>{
     pagination(1)
 }
 
+// This is a function that updates the pagination when called from the dynamic elements
 let updatePagination = (pageStart) =>{
     if(pageStart < currentPage || pageStart == currentPage){
         pageStart = pageStart - 2
