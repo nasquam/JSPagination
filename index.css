@@ -11,10 +11,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.pagination {
-  /* border: 1px solid blue; */
-}
-
 .items ul {
   list-style: none;
   margin: 0;
@@ -22,6 +18,10 @@
 }
 
 .pagination ul li {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 20px;
   padding: 10px;
   border: 1px solid #999999;
   border-radius: 5px;
@@ -73,6 +73,4 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
 }
 
-.pagination ul li {
-  cursor: pointer;
-}
+
